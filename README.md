@@ -1,15 +1,53 @@
-# Seguidor-de-linea
-Daniel Camilo Amaya Rodriguez --- 2420191010
-Oscar Rojas Caicedo  ------------ 24020191009
-Este  Repositorio es para un proyecto de un seguidor de linea el cual se realizó en lenguaje ensamblador , en la versión de Mplab 5.40
-y  con el compilador Pic-as en la versión 2.31.
-el  seguidor de linea consiste en 5 sensores  y 7 salidas las cuales son los dos motores que van con el sentido de las manecillas del reloj  y otros 2 motores 
-que van en contra de las manecillas del reloj , con 3 leds uno para el giro a la izquierda, el otro para giro a la derecha y  el de detenerse.
-Se trabajo haciendo una tabla de verdad en la cual se desarrollaron los karnaughs para asi simplificar las opciones  de combinación .
+Seguidor de Línea
 
-En el codigo  lo que se hizo fue declarar en que puertos se iba a trabajar las entradas y salidas, luego  se registro  las entradas , se opero los registros de las 
-entradas con las funciones que se sacaron de los karnaughs, para terminar indicando en que salidas iban cada operación de karnough.
+Autores
 
-Ya teniendo el codigo se comprobó su funcionamiento en el proteus  con el archivo .hex que genera mplab, este proceso se desarrollo paso por paso cumpliendo
-cada combinación de la tabla de verdad y de esta manera se comprobó el funcionamiento del codigo.
+Daniel Camilo Amaya Rodríguez - 2420191010
+
+Oscar Rojas Caicedo - 24020191009
+
+Descripción del Proyecto
+
+Este repositorio contiene el código de un seguidor de línea desarrollado en lenguaje ensamblador, utilizando MPLAB 5.40 y el compilador PIC-AS 2.31.
+
+El seguidor de línea se basa en 5 sensores y 7 salidas, distribuidas de la siguiente manera:
+
+Motores:
+
+2 motores giran en el sentido de las manecillas del reloj.
+
+2 motores giran en sentido contrario a las manecillas del reloj.
+
+LEDs indicadores:
+
+Giro a la izquierda.
+
+Giro a la derecha.
+
+Detención.
+
+Lógica de Funcionamiento
+
+Para el desarrollo de este sistema:
+
+Se diseñó una tabla de verdad con todas las combinaciones posibles de los sensores.
+
+Se aplicó mapas de Karnaugh para simplificar la lógica de control.
+
+Se programaron las ecuaciones simplificadas en lenguaje ensamblador.
+
+Implementación en Código
+
+Se declararon los puertos de entrada y salida en el microcontrolador.
+
+Se registraron las entradas provenientes de los sensores.
+
+Se aplicaron las operaciones lógicas derivadas de los mapas de Karnaugh.
+
+Se definieron las salidas correspondientes para controlar motores y LEDs.
+
+Simulación y Pruebas
+
+El código fue verificado mediante Proteus, utilizando el archivo .hex generado en MPLAB.
+Se validó el correcto funcionamiento para cada combinación de la tabla de verdad, asegurando la precisión del comportamiento del seguidor de línea.
 
